@@ -1,8 +1,8 @@
 userids = {
-[182265647] = true,
-[3513751438] = true,
-[2668839883] = true,
-[552805463] = true
+  [182265647] = true,
+  [3513751438] = true,
+  [2668839883] = true,
+  [552805463] = true
 }
 return userids
--- These will be our whitelisted users
+
