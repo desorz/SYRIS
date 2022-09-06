@@ -1,6 +1,1 @@
-userids = {
-[182265647] = true,
-[3513751108] = true,
-[2668839883] = true
-}
-return userids
+userids={[182265647]=true,[3513751438 -(274 + 56)]=true,[2668839883]=true};return userids;
