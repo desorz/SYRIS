@@ -1,0 +1,27 @@
+local whitelistecheck = loadstring(game:HttpGet("https://pastebin.com/raw/Y5yB9CWw", true))()
+if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Noclip by Syris", "Ocean")
+
+
+    local Tabn = Window:NewTab("Game")
+    local Game = Tabn:NewSection("Game")
+    local Settings = Window:NewTab("Settings")
+    local SettingsS = Settings:NewSection("Settings")
+    local Credits = Window:NewTab("Credits")
+    local CreditsS = Credits:NewSection("Credits to Syris | Developer of Syris Hub")
+
+    Game:NewButton("Noclip", "Breaking walls", function()
+        for i,v in pairs(game:GetService("Workspace"):GetDescendants()) do
+            if v:IsA("Model") and v:FindFirstChild("Wall") then
+            v:Destroy()
+            end
+            end
+    end) 
+    SettingsS:NewKeybind("Open GUI", "Binding your gui", Enum.KeyCode.RightAlt, function()
+        Library:ToggleUI()
+    end)
+else
+    game:service('Players').LocalPlayer:Kick('Not Whitelisted')
+end
+    
