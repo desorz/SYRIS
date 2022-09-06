@@ -1,1 +1,8 @@
-userids={[182265647]=true,[3513751438 -(274 + 56)]=true,[2668839883]=true};return userids;
+userids = {
+[182265647] = true, -- this is my userid, remove it and add as much as you want in it.
+[3513751438] = true,
+[2668839883] = true,
+[552805463] = tru
+}
+return userids
+-- These will be our whitelisted users
