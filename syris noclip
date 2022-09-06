@@ -1,4 +1,4 @@
-local whitelistecheck = loadstring(game:HttpGet("https://pastebin.com/raw/Y5yB9CWw", true))()
+local whitelistecheck = loadstring(game:HttpGet("https://raw.githubusercontent.com/desorz/syris/main/syrisid", true))()
 if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
     local Window = Library.CreateLib("Noclip by Syris", "Ocean")
