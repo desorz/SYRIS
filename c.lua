@@ -1,4 +1,15 @@
--- Custom Crosshair by zzerexx#3970
+function msg(text,duration)
+    print("q")
+end
+function UpdateScript()
+    local bind = Instance.new("BindableFunction")
+    function bind.OnInvoke(response)
+        print("q")
+    end
+    game.StarterGui:SetCore("SendNotification",{
+        print("q")
+    })
+end
 local player = game:GetService("Players").LocalPlayer
 local camera = workspace.CurrentCamera
 local UIS = game:GetService("UserInputService")
